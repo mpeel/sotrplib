@@ -1,13 +1,11 @@
-from sotrplib.config.config import Settings, load_settings
+from sotrplib.config.config import Settings
 
+# These are the default settings
+print(Settings)
 print(Settings().model_dump())
 
-print(Settings().test)
-print(Settings().teststr)
+# This is reading in from a file
+MySettings = Settings.from_file("/Users/mpeel/Documents/git/sotrplib/sotrplib/config/test_config.json")
 
-load_settings()
-
-
-
-print(Settings().test)
-print(Settings().teststr)
+print(MySettings)
+print(MySettings.test)
