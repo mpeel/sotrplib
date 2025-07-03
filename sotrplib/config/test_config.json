@@ -1,4 +1,4 @@
 {
-	"test": 3,
-	"teststr": "hello"
+	"grid_size": 1.0,
+	"edge_cut": 20
 }
